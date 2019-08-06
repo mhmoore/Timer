@@ -31,7 +31,7 @@ class NapTimer {
     // MARK: - Public Methods
     
     func timeLeftAsString() -> String {
-        let timeRemaining = Int(timeLeft ?? 3 * 60)
+        let timeRemaining = Int(timeLeft ?? 2 * 60)
         let minutesRemaining = timeRemaining / 60
         let secondsRemaining = timeRemaining - (minutesRemaining * 60)
         return String(format: "%02d : %02d", arguments: [minutesRemaining, secondsRemaining])
